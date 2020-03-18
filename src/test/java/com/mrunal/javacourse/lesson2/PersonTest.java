@@ -22,10 +22,10 @@ public class PersonTest {
     public void shouldReturnNumberOfPersons() {
         Person myPerson;
         int i = 0;
-        while (i < 4) {
+        do {
             myPerson =new Person();
-           i++;
-        }
+            i++;
+        } while (i < 4);
         assertEquals(4, Person.numberOfPersons());
     }
 
