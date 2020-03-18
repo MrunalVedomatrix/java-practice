@@ -21,8 +21,10 @@ public class PersonTest {
     @Test
     public void shouldReturnNumberOfPersons() {
         Person myPerson;
-        for (int i = 0; i < 4; i++) {
-            myPerson =new Person();;
+        int i = 0;
+        while (i < 4) {
+            myPerson =new Person();
+           i++;
         }
         assertEquals(4, Person.numberOfPersons());
     }
