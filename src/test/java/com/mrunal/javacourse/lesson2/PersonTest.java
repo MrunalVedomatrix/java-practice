@@ -20,10 +20,11 @@ public class PersonTest {
 
     @Test
     public void shouldReturnNumberOfPersons() {
-        //Person person = new Person();
-        Person person2 = new Person();
-        Person myPerson = new Person();
-        assertEquals(2, Person.numberOfPersons());
+        Person myPerson;
+        for (int i = 0; i < 4; i++) {
+            myPerson =new Person();;
+        }
+        assertEquals(4, Person.numberOfPersons());
     }
 
     @Test
